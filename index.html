@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="imagem/png" href="/icons/TEM_semfundo.png"/>
+  <title>T&M Temperatura</title>
+</head>
+
+<body>
+  <div class="container-fluid p-0 container-sm d-flex justify-content-center" id="totaldiv">
+
+    <div class="card text-center shadow-lg" style="width: 26rem;">
+
+      <nav class="navbar menu navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand name" style= "color: white;" href="index.html">
+          T&M TEMPERATURA
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link botao" style = "color: white;" href ="document.html">DOCUMENTAÇÃO<span class="sr-only"></span></a>
+            </li>
+        </div>
+      </nav>
+
+
+
+      <div class="card-header bg-white font-weight-bold">
+        <div class="container">
+          <div class="row header">
+            <div class="col-3">
+              <img class="img_fluid logo" src="./icons/T&M.png">
+            </div>
+            <div class="col-6">
+              TEMPO E TEMPERATURA
+            </div>
+            <div class="col-3">
+              <img class="img_fluid logo" src="./icons/T&M.png">
+            </div>
+      </div>
+
+      <div class="card-body">
+        <div class="city">Xaxim, BR</div>
+        <div class="date">Quarta, 5 de outubro de 2022</div>
+        <div class="container-img">
+          <img src="./icons/unknown.png">
+        </div>
+        <div class="container-temp mx-4 my-3">
+          <div>22</div>
+          <span>°C</span>
+        </div>
+        <div class="weather py-2">Nublado</div>
+        <div class="low-high">Sensação: 22°C</div>
+      </div>
+
+      <div class="card-footer bg-white">
+        <div class="input-group ">
+          <input type="text" class="form-control bg-light" placeholder="Digite o nome da cidade" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-warning text-dark" type="button" id="button-addon2">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card text-center" style="margin-top: 1%; background-color:darkcyan;">
+        <div class="card-header text-white">
+          Dados do momento:
+        </div>
+        <div class="card-body">
+          <p class="card-text lat">Latitute: </p>
+          <p class="card-text lon">Longitude: </p>
+          <p class="card-text speed">Velocidade do Vento: </p>
+          <p class="card-text humidity">Nível de Humidade: </p>
+          <p class="card-text pressao">Pressão: </p>
+        </div>
+        <div class="card-footer text-white">
+          Atualizado: agora
+        </div>
+      </div>
+
+      <div class="card text-center" style="margin-top: 4%;background-color:lightseagreen;">
+        <div class="card-header text-white">
+          Poluição do ar:
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-3,5 alinha">
+              <p class="card-text">CO: </p> 
+              <p class="card-text">NO2: </p>
+              <p class="card-text">03: </p>
+              <p class="card-text">SO2: </p>
+              <p class="card-text">PM2,5: </p>
+              <p class="card-text">PM10: </p>
+            </div>
+            <div class="col alinha">
+              <p class="card-text co"></p> 
+              <p class="card-text no2"></p>
+              <p class="card-text o3"></p>
+              <p class="card-text so2"></p>
+              <p class="card-text pm25"></p>
+              <p class="card-text pm10"></p>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-white">
+          Atualizado: agora
+        </div>
+      </div>
+
+      <div class="card text-center" style="margin-top: 4%;background-color:turquoise;">
+        <div class="card-header text-white">
+          Tabela de Qualidade do Ar:
+        </div>
+      <div class="card-body">
+      <table class="table">
+        <tbody>
+          <tr style="background-color:rgb(206, 250, 245); font-size: 125%;">
+            <th scope="row">CO</th>
+            <td>NO2</td>
+            <td>03</td>
+            <td>SO2</td>
+            <td>PM2,5</td>
+            <td>PM10</td>
+          </tr>
+          <tr style="background-color:rgb(81, 175, 68);">
+            <th scope="row">0-9</th> 
+            <td>0-200</td>
+            <td>0-100</td>
+            <td>0-20</td>
+            <td>0-25</td>
+            <td>0-50</td>
+          </tr>
+          <tr style="background-color:rgb(230, 217, 42);">
+            <th scope="row">>9-11</th>
+            <td>>200-240</td>
+            <td>>100-130</td>
+            <td>>20-40</td>
+            <td>>25-50</td>
+            <td>>50-100</td>
+          </tr>
+          <tr style="background-color:rgb(224, 84, 42);">
+            <th scope="row">>11-13</th>
+            <td>>240-320</td>
+            <td>>130-160</td>
+            <td>>40-365</td>
+            <td>>50-75</td>
+            <td>>100-150</td>
+          </tr>
+          <tr style="background-color:rgb(175, 68, 68);">
+            <th scope="row">>13-15</th>
+            <td>>320-1130</td>
+            <td>>160-200</td>
+            <td>>365-800</td>
+            <td>>75-125</td>
+            <td>>150-250</td>
+          </tr>
+          <tr style="background-color:rgb(175, 68, 175);">
+            <th scope="row">>15</th>
+            <td>>1130</td>
+            <td>>200</td>
+            <td>>800</td>
+            <td>>125</td>
+            <td>>250</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="card-footer bg-light" style="border-top: 1px solid turquoise;">
+        <ul>
+          <li class="indice verde">■ BOA</li>
+          <li class="indice amarelo">■ MODERADA</li>
+          <li class="indice vermelho">■ RUIM</li>
+          <li class="indice bordo">■ MUITO RUIM</li>
+          <li class="indice roxo">■ PÉSSIMA</li>
+        </ul>  
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  <footer>
+    <br>
+    <hr size="6" width="50%" align="center" style="margin-top:-3%;">
+    <div class="rodape"><h6>By Tiago Zanco and Marcos Stingher</h6></div>
+    <div class="rodape"><h6></h6>|DESENVOLVIMENTO WEB - UNOESC|</h6></div>
+    <br>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

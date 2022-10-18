@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+body{
+    font-family: 'Arvo', serif;
+    background-color: aliceblue;
+}
+
+nav{
+    background: black
+}
+
+.logo {
+    display:inline;
+    width: 100%;
+    height: 100%;
+}
+
+.city{
+    font-size: 32px;
+}
+
+.date {
+    font-size: 16px;
+}
+
+.container-temp{
+    display: flex;
+    justify-content: center;
+    background-color: mediumaquamarine;
+    box-shadow: 5px 6px darkcyan;
+    cursor: pointer;
+
+    font-size: 100px;
+    font-weight: 900;
+    color: white;
+    text-shadow: 3px 6px rgba(0, 0, 0, 0.541);
+}
+
+.weather{
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.low-high {
+    font-size: 22px;
+}
+
+.card-body {
+    background-color: white;
+}
+
+.header {
+    font-size: larger;
+    font-weight: bolder;
+    color: teal;
+    padding-top: 2%;
+    border: 2px solid #004646;    
+}
+
+.table {
+    border: 2px solid rgb(101, 126, 123);
+    font-size: 50%;
+    margin-bottom: -4px;
+}
+
+
+.menu {
+    background: url("./icons/nuvens.png");
+}
+
+.alinha {
+   text-align: right;
+   margin-right: 15%;
+}
+
+
+.botao {
+    background-color: rgb(87, 148, 167);
+    border-radius: 10%;
+    font-size: 13px;
+    margin-left: 16px;
+    border:1.5px solid white;
+}
+.name {
+    font-weight: 1000;
+    text-shadow: 3px 4px rgba(0, 0, 0, 0.644);
+}
+
+.rodape {
+    color: rgb(0, 87, 87);
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: -1%;
+}
+
+.indice{
+    text-align: unset;
+    font-size: 75%;
+    margin-left: -50px;
+}
+
+.indice.verde { color: rgb(81, 175, 68); }
+.indice.amarelo { color: rgb(230, 217, 42); }
+.indice.vermelho { color: rgb(224, 84, 42); }
+.indice.bordo { color: rgb(175, 68, 68); }
+.indice.roxo { color: rgb(175, 68, 175); }
+
+.texto {
+    text-align: justify;
+}
